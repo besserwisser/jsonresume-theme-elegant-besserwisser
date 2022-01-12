@@ -1,6 +1,7 @@
 const fs = require('fs');
 
 const _ = require('underscore');
+const helpers = require('./helpers');
 const utils = require('jsonresume-themeutils');
 const moment = require('moment');
 const markdown = require('markdown-it')({
@@ -161,7 +162,8 @@ function render(resume) {
         resume: resume,
         floating_nav_items: getFloatingNavItems(resume),
         css: css,
-        _: _
+        _: _,
+        helpers,
     });
 }
 

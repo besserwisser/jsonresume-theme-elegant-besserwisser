@@ -29,8 +29,12 @@ unless _.isEmpty(resume.education)
                     |#{education_info.startDate} - #{education_info.endDate || 'Present'}
                 i= education_info.gpa
 
+                if(education_info.score)
+                  span.label.label-keyword=education_info.score
+
                 unless _.isEmpty(education_info.courses)
                   .space-top.labels
                     each course in education_info.courses
                       span.label.label-keyword!= course
+
 

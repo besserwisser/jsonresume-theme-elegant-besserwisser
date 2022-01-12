@@ -23,7 +23,7 @@ unless _.isEmpty(resume.projects)
                 if project.startDate
                   span.space-right
                     small
-                      |&nbsp;(#{project.startDate.substring(project.startDate.length - 4, project.startDate.length) })
+                      |&nbsp;(#{helpers.yearOnly(project.startDate) })
 
               p.text-muted
                 small
