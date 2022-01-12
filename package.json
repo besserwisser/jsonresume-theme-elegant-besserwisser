@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-elegant-besserwisser",
-  "version": "1.16.1",
+  "version": "1.0.0",
   "description": "Elegant theme for jsonresume",
   "main": "index.js",
   "scripts": {
