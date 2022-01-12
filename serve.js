@@ -8,7 +8,10 @@
 
 const http = require('http');
 const fs = require('fs');
-const resume = JSON.parse(fs.readFileSync('node_modules/resume-schema/sample.resume.json', 'utf8'));
+require('dotenv').config();
+console.log(`RESUME_JSON_PATH: ${process.env.RESUME_JSON_PATH}`);
+const jsonPath = process.env.RESUME_JSON_PATH || 'node_modules/resume-schema/sample.resume.json';
+const resume = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 const theme = require('./index.js');
 const path = require('path');
 

@@ -1,6 +1,8 @@
 # Elegant Theme [![npm version](https://badge.fury.io/js/jsonresume-theme-elegant.svg)](http://badge.fury.io/js/jsonresume-theme-elegant)
 
-Responsive theme for [JsonResume](https://jsonresume.org/) inspired by card layouts.
+This is a fork from [jsonresume-theme-elgegant](https://github.com/mudassir0909/jsonresume-theme-elegant) and a Responsive theme for [JsonResume](https://jsonresume.org/) inspired by card layouts. 
+
+It is adjustet to be more concise to show more information, especially in the projects area. Also it will not show any project duration. Instead it just shows the year of project start.
 
 [Theme Preview](http://themes.jsonresume.org/theme/elegant)
 

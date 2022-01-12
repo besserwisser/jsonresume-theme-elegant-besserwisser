@@ -3,3 +3,4 @@ resume.json
 build/*
 *.DS_Store
 public/
+.env
