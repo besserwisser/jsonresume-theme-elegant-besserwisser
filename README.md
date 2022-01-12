@@ -3,6 +3,7 @@
 This is a fork from [jsonresume-theme-elgegant](https://github.com/mudassir0909/jsonresume-theme-elegant) and a Responsive theme for [JsonResume](https://jsonresume.org/) inspired by card layouts. 
 
 Following adjustments are done: 
+* Made environment variable for resume.json
 * more concise project area 
 * Doesn't show project duration, instead just shows the year of project start 
 * Skill level progress bar shows more dramatic values
