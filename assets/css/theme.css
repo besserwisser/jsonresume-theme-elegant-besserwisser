@@ -923,7 +923,7 @@ body {
   bottom: 10px;
   left: 0;
   width: 10px;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
 }
 .skill-level .skill-progress {
   position: absolute;
@@ -933,19 +933,19 @@ body {
   -webkit-transition: height 1s ease;
 }
 .skill-level .skill-progress.beginner {
-  height: 50%;
+  height: 25%;
   background: #e74c3c;
 }
 .skill-level .skill-progress.intermediate {
-  height: 70%;
+  height: 50%;
   background: #f1c40f;
 }
 .skill-level .skill-progress.advanced {
-  height: 80%;
+  height: 75%;
   background: #428bca;
 }
 .skill-level .skill-progress.master {
-  height: 95%;
+  height: 100%;
   background: #5cb85c;
 }
 .skill-info {
