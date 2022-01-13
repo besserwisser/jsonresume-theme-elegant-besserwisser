@@ -1,4 +1,4 @@
-# Eleganter Theme [![npm version](https://badge.fury.io/js/jsonresume-theme-elegant.svg)](http://badge.fury.io/js/jsonresume-theme-elegant)
+# Eleganter Theme [![NPM](https://nodei.co/npm/jsonresume-theme-eleganter.png)](https://npmjs.org/package/jsonresume-theme-eleganter)
 
 This is a fork from [jsonresume-theme-elgegant](https://github.com/mudassir0909/jsonresume-theme-elegant) and a Responsive theme for [JsonResume](https://jsonresume.org/) inspired by card layouts. 
 
@@ -8,6 +8,12 @@ Following adjustments are done:
 * Doesn't show project duration, instead just shows the year of project start 
 * Skill level progress bar shows more dramatic values
 * Education elements show score
+
+
+### Install
+```
+npm i jsonresume-theme-eleganter
+```
 
 ### Markdown Supported
 Supported in the following properties `resume.basics.summary`, `work[0].summary`, `work[0].highlights`, `projects[0].summary`, `projects[0].highlights`, `education[0].courses`, `volunteer[0].summary`, `volunteer[0].highlights`, `awards[0].summary`, `publications[0].summary`, `references[0].reference`, `skills[0].keywords`. If you have any other use case, please raise an issue
@@ -60,16 +66,14 @@ The profiles are shown in the order in which they are specified in the `basics.p
 ```
 $ npm install -g grunt
 $ npm install -g pug-cli
-$ git clone https://github.com/mudassir0909/jsonresume-theme-elegant.git
-$ cd jsonresume-theme-elegant
+$ git clone https://github.com/besserwisser/jsonresume-theme-eleganter.git
+$ cd jsonresume-theme-eleganter
 $ npm install
 $ grunt watch // watches for file changes in *.pug & *.less
 $ grunt exec:run_server // Do this in a new terminal tab to run node server
 ```
 
 Visit [http://localhost:8888](http://localhost:8888) to see the theme in action.
-
-[![Throughput Graph](https://graphs.waffle.io/mudassir0909/jsonresume-theme-elegant/throughput.svg)](https://waffle.io/mudassir0909/jsonresume-theme-elegant/metrics)
 
 ##### Testing JSON changes
 You can test your changes by updating `resume.json` file inside `node_modules/resume-schema/` folder. You might want to rerun `grunt exec:run_server` whenever you make any changes to `resume.json`
