@@ -1,4 +1,4 @@
-unless _.isEmpty(resume.projects)
+unless resume.projects.size === 0
   .detail#projects-experience
     .icon
       i.fs-lg.icon-code
@@ -8,33 +8,31 @@ unless _.isEmpty(resume.projects)
       h4.title.text-uppercase Projects Experience
 
       ul.list-unstyled.clear-margin
-        each project in resume.projects
-          li.card.card-nested.clearfix
-            .content
-              p.clear-margin.relative
-                if project.url
-                  a(href=project.url, target="_blank")
+        each year in [...resume.projects.keys()]
+          div.title.space-top.space-bottom=year
+          each project in resume.projects.get(year)
+            li.card.card-nested.clearfix
+              .content
+                p.clear-margin.relative
+                  if project.url
+                    a(href=project.url, target="_blank")
+                      strong=project.name
+                  else
                     strong=project.name
-                else
-                  strong=project.name
-                if project.entity
-                  span
-                    |,&nbsp;#{project.entity}
-                if project.startDate
-                  span.space-right
-                    small
-                      |&nbsp;(#{helpers.yearOnly(project.startDate) })
+                  if project.entity
+                    span
+                      |,&nbsp;#{project.entity}
 
-              p.text-muted
-                small
-                  unless _.isEmpty(project.keywords)
-                    each highlight in project.keywords
-                      span 
-                        strong ##{highlight}
+                p.text-muted
+                  small
+                    unless _.isEmpty(project.keywords)
+                      each highlight in project.keywords
+                        span 
+                          strong ##{highlight}
 
-              .mop-wrapper.space-bottom!= project.description
+                .mop-wrapper.space-bottom!= project.description
 
-              unless _.isEmpty(project.highlights)
-                ul
-                  each highlight in project.highlights
-                    li.mop-wrapper!= highlight
+                unless _.isEmpty(project.highlights)
+                  ul
+                    each highlight in project.highlights
+                      li.mop-wrapper!= highlight

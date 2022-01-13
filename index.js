@@ -49,11 +49,11 @@ function render(resume) {
         }
 
         if (start_date.isValid()) {
-          project_info.startDate = utils.getFormattedDate(start_date);
+          project_info.startDate = helpers.yearOnly(utils.getFormattedDate(start_date));
         }
 
         if (end_date.isValid()) {
-          project_info.endDate = utils.getFormattedDate(end_date);
+          project_info.endDate = helpers.yearOnly(utils.getFormattedDate(end_date));
         }
 
         project_info.description = convertMarkdown(project_info.description);
@@ -61,6 +61,18 @@ function render(resume) {
         project_info.highlights = _(project_info.highlights)
             .map(highlight => convertMarkdown(highlight));
     });
+
+    resume.projects = resume.projects
+        .reduce( (prev, curr) => {
+            const startDate = curr.startDate;
+            if(prev.has(startDate)) {
+                prev.get(startDate).push(curr); 
+            }
+            else {
+                prev.set(startDate, [curr]);
+            }
+            return prev;
+        }, new Map());
 
     _(resume.work).forEach(work_info => {
         const start_date = moment(work_info.startDate, 'YYYY-MM-DD');
@@ -163,7 +175,6 @@ function render(resume) {
         floating_nav_items: getFloatingNavItems(resume),
         css: css,
         _: _,
-        helpers,
     });
 }
 
