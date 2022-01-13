@@ -8,6 +8,7 @@ Following adjustments are done:
 * Doesn't show project duration, instead just shows the year of project start 
 * Skill level progress bar shows more dramatic values
 * Education elements show score
+* Group projects by year
 
 
 ### Install

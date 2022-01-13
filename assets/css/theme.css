@@ -393,8 +393,15 @@ body {
   width: 100%;
 }
 .background-details .detail .title,
-.background-details .detail .icon {
+.background-details .detail .icon,
+.background-details .detail .year {
   color: #707070;
+}
+.background-details .detail .year {
+  margin-bottom: 10px;
+}
+.background-details .detail .year ~ .year {
+  margin-top: 1em;
 }
 .background-details .detail .mobile-title {
   display: none;
@@ -923,7 +930,7 @@ body {
   bottom: 10px;
   left: 0;
   width: 10px;
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
 }
 .skill-level .skill-progress {
   position: absolute;
@@ -933,19 +940,19 @@ body {
   -webkit-transition: height 1s ease;
 }
 .skill-level .skill-progress.beginner {
-  height: 25%;
+  height: 50%;
   background: #e74c3c;
 }
 .skill-level .skill-progress.intermediate {
-  height: 50%;
+  height: 70%;
   background: #f1c40f;
 }
 .skill-level .skill-progress.advanced {
-  height: 75%;
+  height: 80%;
   background: #428bca;
 }
 .skill-level .skill-progress.master {
-  height: 100%;
+  height: 95%;
   background: #5cb85c;
 }
 .skill-info {

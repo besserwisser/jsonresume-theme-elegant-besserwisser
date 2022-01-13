@@ -9,7 +9,7 @@ unless resume.projects.size === 0
 
       ul.list-unstyled.clear-margin
         each year in [...resume.projects.keys()]
-          div.title.space-top.space-bottom=year
+          div.year=year
           each project in resume.projects.get(year)
             li.card.card-nested.clearfix
               .content
