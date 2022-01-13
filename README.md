@@ -1,4 +1,4 @@
-# Eleganter Theme [![NPM](https://nodei.co/npm/jsonresume-theme-eleganter.png)](https://npmjs.org/package/jsonresume-theme-eleganter)
+# Eleganter Theme [![npm version](https://badge.fury.io/js/jsonresume-theme-eleganter.svg)](https://badge.fury.io/js/jsonresume-theme-eleganter)
 
 This is a fork from [jsonresume-theme-elgegant](https://github.com/mudassir0909/jsonresume-theme-elegant) and a Responsive theme for [JsonResume](https://jsonresume.org/) inspired by card layouts. 
 
