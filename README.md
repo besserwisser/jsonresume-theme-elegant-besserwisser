@@ -1,4 +1,4 @@
-# Elegant Theme [![npm version](https://badge.fury.io/js/jsonresume-theme-elegant.svg)](http://badge.fury.io/js/jsonresume-theme-elegant)
+# Eleganter Theme [![npm version](https://badge.fury.io/js/jsonresume-theme-elegant.svg)](http://badge.fury.io/js/jsonresume-theme-elegant)
 
 This is a fork from [jsonresume-theme-elgegant](https://github.com/mudassir0909/jsonresume-theme-elegant) and a Responsive theme for [JsonResume](https://jsonresume.org/) inspired by card layouts. 
 
@@ -8,8 +8,6 @@ Following adjustments are done:
 * Doesn't show project duration, instead just shows the year of project start 
 * Skill level progress bar shows more dramatic values
 * Education elements show score
-
-[Theme Preview](http://themes.jsonresume.org/theme/elegant)
 
 ### Markdown Supported
 Supported in the following properties `resume.basics.summary`, `work[0].summary`, `work[0].highlights`, `projects[0].summary`, `projects[0].highlights`, `education[0].courses`, `volunteer[0].summary`, `volunteer[0].highlights`, `awards[0].summary`, `publications[0].summary`, `references[0].reference`, `skills[0].keywords`. If you have any other use case, please raise an issue
@@ -86,7 +84,3 @@ All the javascript changes go into `index.js` which is responsible for rendering
 
 ##### Adding a new icon
 Visit this [wiki page](https://github.com/mudassir0909/jsonresume-theme-elegant/wiki/Adding-a-new-icon)
-
-### Roadmap
-
-[https://github.com/mudassir0909/jsonresume-theme-elegant/labels/enhancement](https://github.com/mudassir0909/jsonresume-theme-elegant/labels/enhancement)
