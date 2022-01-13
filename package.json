@@ -1,26 +1,23 @@
 {
-  "name": "jsonresume-theme-elegant-besserwisser",
+  "name": "jsonresume-theme-eleganter",
   "version": "1.0.0",
-  "description": "Elegant theme for jsonresume",
+  "description": "Modified elegant theme for jsonresume",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mudassir0909/jsonresume-theme-elegant.git"
+    "url": "https://github.com/besserwisser/jsonresume-theme-eleganter"
   },
   "keywords": [
     "jsonresume",
     "theme",
     "elegant"
   ],
-  "author": "Mudassir Ali <mudassir.dev@gmail.com>",
+  "author": "besserwisser",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mudassir0909/jsonresume-theme-elegant/issues"
-  },
-  "homepage": "https://github.com/mudassir0909/jsonresume-theme-elegant",
+  "homepage": "https://github.com/besserwisser/jsonresume-theme-eleganter",
   "dependencies": {
     "dotenv": "^11.0.0",
     "gravatar": "^1.0.6",
