@@ -9,6 +9,7 @@ Following adjustments are done:
 * Skill level progress bar shows more dramatic values
 * Education elements show score
 * Group projects by year
+* Fix the position of the active marker in projects
 
 
 ### Install

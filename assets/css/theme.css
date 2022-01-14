@@ -471,8 +471,8 @@ body {
   color: #5ACE24;
   position: absolute;
   right: 100%;
-  top: 4px;
-  left: -10px;
+  top: 0.9em;
+  left: -12px;
 }
 .mop-wrapper > p:last-child {
   margin: 0;
